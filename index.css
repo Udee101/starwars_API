@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 20px;
+    background: linear-gradient(to right, rgb(0, 0, 128), rgb(187, 13, 13), rgb(250, 128, 128));
+}
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-80%);
+    }
+    80% {
+      transform: translateX(0);
+    }
+}
+
+.container{
+    padding: 10px;
+    animation: 1.2s ease-out 0s 1 slideInLeft;
+}
+.planet-container{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.planet-content{
+    width: 250px;
+    height: 400px;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.img-container{
+    width: 100%;
+    height: 65%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.planet{
+    height: 35%;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+.planet p{
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+.pages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.pages a{
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 3px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.pages .active{
+    background: #fff;
+    color: #bb0d0d;
+}
+.pages a:hover{
+    background: #fff;
+    color: #bb0d0d;
+    transition: .5s;
+}
